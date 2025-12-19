@@ -1,19 +1,19 @@
 body{
     font-family:Arial,sans-serif;
-    background-color:black;
+    background-color:pink;
     display:flex;
     justify-content:center;
     align-content:center;
-    height:90vh;
+    height:150vh;
     width:100%;
     margin:0;
     background-image:url("registerPage.jpg");
-    background-size:cover;
+    background-size:contain;
     background-position:center;
     background-repeat: no-repeat;
     position:relative;
     overflow-x: hidden;
-    background-image: url(blood.jpg);
+    
 }
 
 .container{

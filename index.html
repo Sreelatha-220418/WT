@@ -2,10 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>user login form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HEDING 1 IS UPDATED</h1>
+    <img src="blood.jpg" alt="my image">
+    <div class="container">
+        <h2>User Login Form</h2>
+        <form id="loginform" action="connect.php" method="post">
+            <input type="hidden" name="form_type" value="login">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="bloodgroup">Bloodgroup:</label>
+                <select id="bloodgroud" name="bloodgroup" required>
+                    <option value="" disabled selected> select your blood group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>    
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+            <div id="additional-options">
+                <p>Don't have an account?</p>
+                <p><a href="register.html">Register Now</a></p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
